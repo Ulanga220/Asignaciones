@@ -39,8 +39,8 @@
             this.lstProg = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmdAsignar = new System.Windows.Forms.Button();
-            this.lstDef = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lstv_registro = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,7 @@
             this.cmdAceptar.TabIndex = 3;
             this.cmdAceptar.Text = "cmdAceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
+            this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
             // 
             // groupBox1
             // 
@@ -144,14 +145,6 @@
             this.cmdAsignar.UseVisualStyleBackColor = true;
             this.cmdAsignar.Click += new System.EventHandler(this.cmdAsignar_Click);
             // 
-            // lstDef
-            // 
-            this.lstDef.FormattingEnabled = true;
-            this.lstDef.Location = new System.Drawing.Point(22, 38);
-            this.lstDef.Name = "lstDef";
-            this.lstDef.Size = new System.Drawing.Size(747, 134);
-            this.lstDef.TabIndex = 7;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -161,13 +154,21 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Defectos sin resolver";
             // 
+            // lstv_registro
+            // 
+            this.lstv_registro.Location = new System.Drawing.Point(12, 38);
+            this.lstv_registro.Name = "lstv_registro";
+            this.lstv_registro.Size = new System.Drawing.Size(776, 141);
+            this.lstv_registro.TabIndex = 9;
+            this.lstv_registro.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstv_registro);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lstDef);
             this.Controls.Add(this.cmdAceptar);
             this.Controls.Add(this.txtFecAlta);
             this.Controls.Add(this.txtId);
@@ -197,8 +198,8 @@
         private System.Windows.Forms.ListBox lstProg;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button cmdAsignar;
-        private System.Windows.Forms.ListBox lstDef;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView lstv_registro;
     }
 }
 
